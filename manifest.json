@@ -1,0 +1,18 @@
+﻿{
+  "name": "ToolBox Web - Privacy-First Web Utilities",
+  "short_name": "ToolBox Web",
+  "description": "20 fast, free, privacy-first online tools running 100% locally in your browser with zero server uploads.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

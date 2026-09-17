@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="lqjFhh26ApG4QmZ8sO27c3EqyKm8RCM_UF858ZWgzd0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToolBox Web - Simple, Fast & Free Online Tools for Everyone</title>
+  <meta name="description" content="Free, fast, and privacy-first online tools. Compress images, merge PDFs, generate QR codes, format JSON, count words, and more directly in your browser without server uploads.">
+  <meta name="keywords" content="online tools, image compressor, pdf merger, qr generator, json formatter, password generator, unit converter, client side tools">
+  <link rel="canonical" href="https://manojkhatri0025-ops.github.io/toolbox-web/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://manojkhatri0025-ops.github.io/toolbox-web/">
+  <meta property="og:title" content="ToolBox Web - Simple, Fast & Free Online Tools">
+  <meta property="og:description" content="Explore 20 powerful browser-based tools. 100% client-side, private, and free forever.">
+  <meta property="og:image" content="https://manojkhatri0025-ops.github.io/toolbox-web/assets/favicon.svg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ToolBox Web - Simple, Fast & Free Online Tools">
+  <meta name="twitter:description" content="Explore 20 powerful browser-based tools. 100% client-side, private, and free forever.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ToolBox Web",
+  "url": "https://manojkhatri0025-ops.github.io/toolbox-web/",
+  "description": "Free, browser-based multi-tool web application providing image, PDF, QR, text, developer, and utility tools with complete privacy.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://manojkhatri0025-ops.github.io/toolbox-web/tools.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="ToolBox Web Homepage">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4f46e5" />
+              <stop offset="100%" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="12" fill="url(#logoGrad)"/>
+          <path d="M14 24L21 17L28 24L21 31Z" fill="#ffffff" opacity="0.9"/>
+          <path d="M24 14L31 21L38 14" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="29" cy="29" r="5" fill="#ffffff"/>
+        </svg>
+        <span>ToolBox <span class="brand-highlight">Web</span></span>
+      </a>
+
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="tools.html" class="nav-link">All Tools</a></li>
+          <li class="nav-dropdown">
+            <a href="#categories" class="nav-link nav-dropdown-toggle">Categories <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="tools.html?category=image" class="dropdown-link">🖼️ Image Tools</a></li>
+              <li><a href="tools.html?category=pdf" class="dropdown-link">📄 PDF Tools</a></li>
+              <li><a href="tools.html?category=qr" class="dropdown-link">📱 QR Tools</a></li>
+              <li><a href="tools.html?category=security" class="dropdown-link">🔒 Security Tools</a></li>
+              <li><a href="tools.html?category=text" class="dropdown-link">✍️ Text Tools</a></li>
+              <li><a href="tools.html?category=developer" class="dropdown-link">💻 Developer Tools</a></li>
+              <li><a href="tools.html?category=utility" class="dropdown-link">⚡ Utility Tools</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Switch Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-badge">
+          <span>✨ 20 Fast, Privacy-First Browser Tools</span>
+        </div>
+        <h1 class="hero-title">Simple, Fast & Free <br><span class="gradient-text">Online Browser Tools</span></h1>
+        <p class="hero-desc">Process your images, merge PDFs, scan QR codes, convert data formats, and perform calculations directly inside your browser. No files uploaded to remote servers, no registrations, and no API keys required.</p>
+        
+        <div class="hero-cta-group">
+          <a href="tools.html" class="btn btn-primary btn-lg">Explore All Tools →</a>
+          <a href="#popular-tools" class="btn btn-secondary btn-lg">Popular Tools</a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="hero-trust-item">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>100% Client-Side Privacy</span>
+          </div>
+          <div class="hero-trust-item">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+            <span>Lightning Fast Execution</span>
+          </div>
+          <div class="hero-trust-item">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+            <span>Zero Sign-Up Required</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+    </div>
+
+    <!-- Popular Tools Section -->
+    <section class="section" id="popular-tools">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Most Popular Tools</h2>
+          <p class="section-desc">Quickly access our most frequently used everyday digital utilities.</p>
+        </div>
+
+        <div class="tool-grid">
+          <!-- Tool 1: Image Compressor -->
+          <a href="tools/image-compressor.html" class="tool-card">
+            <div class="tool-card-icon">🗜️</div>
+            <h3 class="tool-card-title">Image Compressor</h3>
+            <p class="tool-card-desc">Compress JPG, PNG, and WebP images client-side with custom quality control and live file size savings.</p>
+            <div class="tool-card-footer">
+              <span class="tool-badge">Image</span>
+              <span class="tool-card-action">Use Tool <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg></span>
+            </div>
+          </a>
+
+          <!-- Tool 6: PDF Merger -->
+          <a href="tools/pdf-merger.html" class="tool-card">
+            <div class="tool-card-icon">📑</div>
+            <h3 class="tool-card-title">PDF Merger</h3>
+            <p class="tool-card-desc">Combine multiple PDF documents into a single organized file in seconds without server uploads.</p>
+            <div class="tool-card-footer">
+              <span class="tool-badge">PDF</span>
+              <span class="tool-card-action">Use Tool <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg></span>
+            </div>
+          </a>
+
+          <!-- Tool 8: QR Code Generator -->
+          <a href="tools/qr-generator.html" class="tool-card">
+            <div class="tool-card-icon">📱</div>
+            <h3 class="tool-card-title">QR Code Generator</h3>
+            <p class="tool-card-desc">Generate high-resolution QR codes for websites, WiFi networks, vCards, text, and emails with custom colors.</p>
+            <div class="tool-card-footer">
+              <span class="tool-badge">QR</span>
+              <span class="tool-card-action">Use Tool <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg></span>
+            </div>
+          </a>
+
+          <!-- Tool 13: JSON Formatter -->
+          <a href="tools/json-formatter.html" class="tool-card">
+            <div class="tool-card-icon">{ }</div>
+            <h3 class="tool-card-title">JSON Formatter</h3>
+            <p class="tool-card-desc">Format, validate, beautify, and minify JSON strings with human-friendly syntax error diagnostics.</p>
+            <div class="tool-card-footer">
+              <span class="tool-badge">Developer</span>
+              <span class="tool-card-action">Use Tool <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg></span>
+            </div>
+          </a>
+
+          <!-- Tool 10: Password Generator -->
+          <a href="tools/password-generator.html" class="tool-card">
+            <div class="tool-card-icon">🔒</div>
+            <h3 class="tool-card-title">Password Generator</h3>
+            <p class="tool-card-desc">Create ultra-secure, cryptographically random passwords with customizable length, symbols, and entropy strength.</p>
+            <div class="tool-card-footer">
+              <span class="tool-badge">Security</span>
+              <span class="tool-card-action">Use Tool <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg></span>
+            </div>
+          </a>
+
+          <!-- Tool 11: Word Counter -->
+          <a href="tools/word-counter.html" class="tool-card">
+            <div class="tool-card-icon">📝</div>
+            <h3 class="tool-card-title">Word & Character Counter</h3>
+            <p class="tool-card-desc">Count words, characters, sentences, paragraphs, and calculate estimated reading & speaking time live.</p>
+            <div class="tool-card-footer">
+              <span class="tool-badge">Text</span>
+              <span class="tool-card-action">Use Tool <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Categories Section -->
+    <section class="section" id="categories" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Explore All 20 Tools by Category</h2>
+          <p class="section-desc">Comprehensive browser-side utilities crafted for creators, developers, students, and professionals.</p>
+        </div>
+
+        <!-- 1. Image Tools -->
+        <div class="category-header">
+          <h3 class="category-title">🖼️ Image Tools</h3>
+          <a href="tools.html?category=image" class="btn btn-secondary btn-sm">View All 5</a>
+        </div>
+        <div class="tool-grid">
+          <a href="tools/image-compressor.html" class="tool-card">
+            <div class="tool-card-icon">🗜️</div>
+            <h4 class="tool-card-title">Image Compressor</h4>
+            <p class="tool-card-desc">Reduce file size of JPG, PNG, and WebP files without noticeable quality loss.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/image-resizer.html" class="tool-card">
+            <div class="tool-card-icon">📐</div>
+            <h4 class="tool-card-title">Image Resizer</h4>
+            <p class="tool-card-desc">Resize images to exact dimensions or percentage ratios while preserving aspect ratio.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/image-converter.html" class="tool-card">
+            <div class="tool-card-icon">🔄</div>
+            <h4 class="tool-card-title">Image Converter</h4>
+            <p class="tool-card-desc">Convert pictures between JPG, PNG, and modern WebP formats in seconds.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/image-cropper.html" class="tool-card">
+            <div class="tool-card-icon">✂️</div>
+            <h4 class="tool-card-title">Image Cropper</h4>
+            <p class="tool-card-desc">Crop images with interactive handles and presets for 1:1, 4:3, and 16:9 aspect ratios.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/image-to-pdf.html" class="tool-card">
+            <div class="tool-card-icon">📑</div>
+            <h4 class="tool-card-title">Image to PDF</h4>
+            <p class="tool-card-desc">Convert and combine multiple image files into a clean, downloadable PDF booklet.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+        </div>
+
+        <!-- 2. PDF Tools -->
+        <div class="category-header">
+          <h3 class="category-title">📄 PDF Tools</h3>
+          <a href="tools.html?category=pdf" class="btn btn-secondary btn-sm">View All 2</a>
+        </div>
+        <div class="tool-grid">
+          <a href="tools/pdf-merger.html" class="tool-card">
+            <div class="tool-card-icon">📑</div>
+            <h4 class="tool-card-title">PDF Merger</h4>
+            <p class="tool-card-desc">Upload, arrange, and combine multiple PDF files into one clean document.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/pdf-splitter.html" class="tool-card">
+            <div class="tool-card-icon">📂</div>
+            <h4 class="tool-card-title">PDF Splitter</h4>
+            <p class="tool-card-desc">Extract specific pages or page ranges from any PDF file locally.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+        </div>
+
+        <!-- 3. QR Tools -->
+        <div class="category-header">
+          <h3 class="category-title">📱 QR Tools</h3>
+          <a href="tools.html?category=qr" class="btn btn-secondary btn-sm">View All 2</a>
+        </div>
+        <div class="tool-grid">
+          <a href="tools/qr-generator.html" class="tool-card">
+            <div class="tool-card-icon">📱</div>
+            <h4 class="tool-card-title">QR Code Generator</h4>
+            <p class="tool-card-desc">Generate customized QR codes for URLs, WiFi, contacts, text, and phone numbers.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/qr-scanner.html" class="tool-card">
+            <div class="tool-card-icon">📷</div>
+            <h4 class="tool-card-title">QR Code Scanner</h4>
+            <p class="tool-card-desc">Scan QR codes live using your device camera or by uploading an image file.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+        </div>
+
+        <!-- 4. Security & Text Tools -->
+        <div class="category-header">
+          <h3 class="category-title">🔒 Security & ✍️ Text Tools</h3>
+          <a href="tools.html?category=text" class="btn btn-secondary btn-sm">View All 3</a>
+        </div>
+        <div class="tool-grid">
+          <a href="tools/password-generator.html" class="tool-card">
+            <div class="tool-card-icon">🔑</div>
+            <h4 class="tool-card-title">Password Generator</h4>
+            <p class="tool-card-desc">Generate cryptographically secure passwords with entropy measurement.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/word-counter.html" class="tool-card">
+            <div class="tool-card-icon">📝</div>
+            <h4 class="tool-card-title">Word & Character Counter</h4>
+            <p class="tool-card-desc">Analyze character length, words, reading duration, and sentence statistics.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/text-case-converter.html" class="tool-card">
+            <div class="tool-card-icon">🔤</div>
+            <h4 class="tool-card-title">Text Case Converter</h4>
+            <p class="tool-card-desc">Convert text to UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+        </div>
+
+        <!-- 5. Developer Tools -->
+        <div class="category-header">
+          <h3 class="category-title">💻 Developer Tools</h3>
+          <a href="tools.html?category=developer" class="btn btn-secondary btn-sm">View All 3</a>
+        </div>
+        <div class="tool-grid">
+          <a href="tools/json-formatter.html" class="tool-card">
+            <div class="tool-card-icon">{ }</div>
+            <h4 class="tool-card-title">JSON Formatter</h4>
+            <p class="tool-card-desc">Validate, beautify, and minify JSON with accurate line and column error reporting.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/base64.html" class="tool-card">
+            <div class="tool-card-icon">🔡</div>
+            <h4 class="tool-card-title">Base64 Encoder/Decoder</h4>
+            <p class="tool-card-desc">Encode and decode Base64 strings safely with full Unicode and emoji compatibility.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/url-encoder-decoder.html" class="tool-card">
+            <div class="tool-card-icon">🔗</div>
+            <h4 class="tool-card-title">URL Encoder/Decoder</h4>
+            <p class="tool-card-desc">Escape and unescape URL query parameters and full links safely.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+        </div>
+
+        <!-- 6. Utility Tools & Calculators -->
+        <div class="category-header">
+          <h3 class="category-title">⚡ Utility Tools & Calculators</h3>
+          <a href="tools.html?category=utility" class="btn btn-secondary btn-sm">View All 5</a>
+        </div>
+        <div class="tool-grid">
+          <a href="tools/color-picker.html" class="tool-card">
+            <div class="tool-card-icon">🎨</div>
+            <h4 class="tool-card-title">Color Picker</h4>
+            <p class="tool-card-desc">Interactive palette with HEX, RGB, HSL, HSV, and WCAG contrast ratio analysis.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/unit-converter.html" class="tool-card">
+            <div class="tool-card-icon">⚖️</div>
+            <h4 class="tool-card-title">Unit Converter</h4>
+            <p class="tool-card-desc">Convert across Length, Mass, Temperature, Area, Volume, Speed, Time, and Data.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/timestamp-converter.html" class="tool-card">
+            <div class="tool-card-icon">⏰</div>
+            <h4 class="tool-card-title">Timestamp Converter</h4>
+            <p class="tool-card-desc">Convert Unix epoch timestamps to human readable dates, UTC ISO, and relative time.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/calculator.html" class="tool-card">
+            <div class="tool-card-icon">🧮</div>
+            <h4 class="tool-card-title">Calculator</h4>
+            <p class="tool-card-desc">Standard and scientific math calculator with history and safe expression evaluation.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+          <a href="tools/bmi-calculator.html" class="tool-card">
+            <div class="tool-card-icon">🏃</div>
+            <h4 class="tool-card-title">BMI Calculator</h4>
+            <p class="tool-card-desc">Calculate Body Mass Index in metric or imperial units with visual category indicators.</p>
+            <div class="tool-card-footer"><span class="tool-card-action">Open →</span></div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why Choose ToolBox Web Feature Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Use ToolBox Web?</h2>
+          <p class="section-desc">Designed from the ground up for speed, security, and seamless usability.</p>
+        </div>
+
+        <div class="guide-steps">
+          <div class="step-card">
+            <div class="step-number" style="background: linear-gradient(135deg, #10b981, #059669);">🔒</div>
+            <h3 class="step-title">100% Client-Side Privacy</h3>
+            <p class="step-desc">Your files, images, PDFs, and text snippets never leave your device. All operations execute directly in your browser's local memory using modern Web APIs.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">⚡</div>
+            <h3 class="step-title">Instant Results</h3>
+            <p class="step-desc">No uploading to remote servers and waiting for queues. Conversions, compression, and mathematical calculations happen immediately.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">📱</div>
+            <h3 class="step-title">Fully Responsive & Accessible</h3>
+            <p class="step-desc">Optimized for smartphones, tablets, laptops, and ultra-wide desktop monitors with complete touch and keyboard support.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number" style="background: linear-gradient(135deg, #f59e0b, #d97706);">✨</div>
+            <h3 class="step-title">Always Free & Keyless</h3>
+            <p class="step-desc">No accounts, no subscriptions, no software installations, and no third-party API keys required. Open the page and get to work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Preview Section -->
+    <section class="section" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Common questions regarding privacy, browser compatibility, and file processing.</p>
+        </div>
+
+        <div class="faq-list" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are my files or images uploaded to your servers?</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. Every file processing tool on ToolBox Web (including Image Compressor, Image Resizer, Image to PDF, PDF Merger, and PDF Splitter) runs 100% locally inside your browser using HTML5 Canvas, Web APIs, and client-side JavaScript libraries. Your files never leave your computer or phone.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need to sign up or create an account?</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No registration or login is ever required. All 20 tools are completely free to use without restrictions.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Which browsers and devices are supported?</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>ToolBox Web is fully compatible with all modern browsers including Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge, Opera, and mobile browsers on iOS and Android.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="faq.html" class="btn btn-outline">Read All Frequently Asked Questions →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Call to Action Section -->
+    <section class="section" style="text-align: center;">
+      <div class="container">
+        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 1rem;">Ready to streamline your workflow?</h2>
+        <p style="max-width: 600px; margin: 0 auto 2rem; color: var(--text-muted);">Explore our complete suite of 20 browser tools designed to boost productivity without compromising your privacy.</p>
+        <a href="tools.html" class="btn btn-primary btn-lg">Browse All 20 Tools Now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Reusable Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ToolBox Web Home">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect width="48" height="48" rx="12" fill="url(#logoGrad)"/>
+              <path d="M14 24L21 17L28 24L21 31Z" fill="#ffffff" opacity="0.9"/>
+              <path d="M24 14L31 21L38 14" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="29" cy="29" r="5" fill="#ffffff"/>
+            </svg>
+            <span>ToolBox <span class="brand-highlight">Web</span></span>
+          </a>
+          <p>Your privacy-first, client-side digital utility platform. Process images, documents, text, code, and measurements safely in your browser.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">All 20 Tools</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sitemap.html">HTML Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Tool Categories</h4>
+          <ul class="footer-links">
+            <li><a href="tools.html?category=image">Image Tools</a></li>
+            <li><a href="tools.html?category=pdf">PDF Tools</a></li>
+            <li><a href="tools.html?category=qr">QR Code Tools</a></li>
+            <li><a href="tools.html?category=security">Security Tools</a></li>
+            <li><a href="tools.html?category=text">Text Utilities</a></li>
+            <li><a href="tools.html?category=developer">Developer Tools</a></li>
+            <li><a href="tools.html?category=utility">Math & Utilities</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> ToolBox Web. All rights reserved. Built with pure HTML5, CSS3, and JavaScript.
+        </div>
+
+        <!-- 4 Accessible Social Icons -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

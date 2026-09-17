@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions (FAQ) - ToolBox Web Help Center</title>
+  <meta name="description" content="Find answers to common questions about ToolBox Web: client-side file security, browser compatibility, offline support, and file size limits.">
+  <link rel="canonical" href="https://manojkhatri0025-ops.github.io/toolbox-web/faq.html">
+
+  <meta property="og:title" content="FAQ - ToolBox Web">
+  <meta property="og:description" content="Clear answers regarding our zero-upload architecture, file limits, and privacy guarantees.">
+  <meta property="og:image" content="https://manojkhatri0025-ops.github.io/toolbox-web/assets/favicon.svg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    /* Clean, accessible FAQ Accordion */
+    .faq-category {
+      margin-bottom: 2.5rem;
+    }
+    .faq-category-title {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 0.75rem;
+      background-color: var(--bg-surface);
+      overflow: hidden;
+      transition: border-color var(--transition-fast);
+    }
+    .faq-item:hover {
+      border-color: var(--primary);
+    }
+    .faq-question {
+      padding: 1.1rem 1.25rem;
+      font-weight: 600;
+      font-size: 1.05rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      list-style: none;
+    }
+    .faq-question::-webkit-details-marker {
+      display: none;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--primary);
+      transition: transform var(--transition-fast);
+    }
+    .faq-item[open] .faq-question::after {
+      content: '−';
+    }
+    .faq-answer {
+      padding: 0 1.25rem 1.25rem 1.25rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+  </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are my files really safe? Do they ever get uploaded to your servers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, your files are 100% safe. ToolBox Web executes all transformations directly inside your browser. Your images, PDFs, text, and data never leave your computer or touch a remote server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ToolBox Web work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tools process data locally after the page and required libraries have loaded. PDF and QR tools initially download libraries from third-party CDNs. Reopening or reloading pages offline is not guaranteed to work."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="ToolBox Web Home">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4f46e5" />
+              <stop offset="100%" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="12" fill="url(#logoGrad)"/>
+          <path d="M14 24L21 17L28 24L21 31Z" fill="#ffffff" opacity="0.9"/>
+          <path d="M24 14L31 21L38 14" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="29" cy="29" r="5" fill="#ffffff"/>
+        </svg>
+        <span>ToolBox <span class="brand-highlight">Web</span></span>
+      </a>
+
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="tools.html" class="nav-link">All Tools</a></li>
+          <li class="nav-dropdown">
+            <a href="tools.html" class="nav-link nav-dropdown-toggle">Categories <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="tools.html?category=image" class="dropdown-link">🖼️ Image Tools</a></li>
+              <li><a href="tools.html?category=pdf" class="dropdown-link">📄 PDF Tools</a></li>
+              <li><a href="tools.html?category=qr" class="dropdown-link">📱 QR Tools</a></li>
+              <li><a href="tools.html?category=security" class="dropdown-link">🔒 Security Tools</a></li>
+              <li><a href="tools.html?category=text" class="dropdown-link">✍️ Text Tools</a></li>
+              <li><a href="tools.html?category=developer" class="dropdown-link">💻 Developer Tools</a></li>
+              <li><a href="tools.html?category=utility" class="dropdown-link">⚡ Utility Tools</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container" style="padding-top: 2rem;">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span aria-current="page">Frequently Asked Questions</span>
+      </nav>
+
+      <!-- Page Header -->
+      <div class="tool-header" style="text-align: center; max-width: 800px; margin: 0 auto 2.5rem auto;">
+        <h1 class="tool-title" style="font-size: 2.5rem;">Frequently Asked Questions</h1>
+        <p class="tool-subtitle" style="font-size: 1.15rem; margin-top: 0.75rem;">
+          Everything you need to know about our privacy-first, client-side tools, browser support, and file limits.
+        </p>
+      </div>
+
+      <!-- FAQ Container -->
+      <div style="max-width: 860px; margin: 2rem auto;">
+        
+        <!-- Category 1: Privacy & Security -->
+        <div class="faq-category">
+          <h2 class="faq-category-title"><span>🔒</span> Privacy & Security</h2>
+
+          <details class="faq-item" open>
+            <summary class="faq-question">Are my files really safe? Do they ever get uploaded to your servers?</summary>
+            <div class="faq-answer">
+              <strong>They are 100% private and safe.</strong> ToolBox Web is engineered with a strict zero-upload architecture. When you compress an image, merge PDFs, or format JSON, all data processing takes place directly inside your own web browser’s memory using client-side JavaScript, Web Cryptography, and the HTML5 Canvas API. Your files never touch our servers or any cloud storage.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Does ToolBox Web store my generated passwords or scanned QR codes?</summary>
+            <div class="faq-answer">
+              No. Generated passwords and decoded QR codes exist only in your browser tab's volatile runtime memory. We do not maintain any databases, logs, or analytics that record your inputs. Once you close the tab or refresh the page, the data disappears completely.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is ToolBox Web compliant with GDPR and CCPA regulations?</summary>
+            <div class="faq-answer">
+              Yes. Because we do not collect, process, or store personal files or personally identifiable information (PII), we exceed standard compliance mandates. Our only persistent first-party storage is a single entry in your browser's <span class="font-mono">localStorage</span> storing your preferred visual theme (light or dark mode).
+            </div>
+          </details>
+        </div>
+
+        <!-- Category 2: Image & PDF Utilities -->
+        <div class="faq-category">
+          <h2 class="faq-category-title"><span>📄</span> Image & PDF Tools</h2>
+
+          <details class="faq-item">
+            <summary class="faq-question">What is the maximum file size I can compress or merge?</summary>
+            <div class="faq-answer">
+              Because all processing happens on your local device, file size limitations are governed by your device's available RAM and browser hardware acceleration rather than artificial server quotas. Most modern computers and smartphones can effortlessly handle images up to 50MB and PDF files containing hundreds of pages.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Why is image compression and resizing so much faster than other websites?</summary>
+            <div class="faq-answer">
+              Traditional conversion websites force you to upload your multi-megabyte image over the internet, wait in a backend server queue, and then download the converted file. ToolBox Web eliminates network latency entirely by rasterizing and re-encoding the image directly on your local GPU/CPU in a fraction of a second.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What image formats are supported for conversion?</summary>
+            <div class="faq-answer">
+              Our Image Converter natively supports JPEG, PNG, and modern WebP. You can easily convert between any of these formats with adjustable compression qualities.
+            </div>
+          </details>
+        </div>
+
+        <!-- Category 3: Technology & Offline Access -->
+        <div class="faq-category">
+          <h2 class="faq-category-title"><span>⚡</span> Technology & Compatibility</h2>
+
+          <details class="faq-item">
+            <summary class="faq-question">Can I use ToolBox Web while offline without an internet connection?</summary>
+            <div class="faq-answer">
+              Tools process data locally after the page and required libraries have loaded. PDF and QR tools initially download libraries from third-party CDNs. Reopening or reloading pages offline is not guaranteed to work.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Which browsers and devices are supported?</summary>
+            <div class="faq-answer">
+              ToolBox Web is fully responsive and optimized for all modern evergreen browsers, including Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge, Opera, and Brave, across desktop, laptop, tablet, and mobile platforms.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Are there any paid subscriptions, limits, or API keys required?</summary>
+            <div class="faq-answer">
+              None whatsoever. All 20 utilities are 100% free and open to everyone without signups, account registrations, subscriptions, or API keys.
+            </div>
+          </details>
+        </div>
+
+        <!-- Category 4: Support & Feedback -->
+        <div class="faq-category">
+          <h2 class="faq-category-title"><span>💬</span> Support & Suggestions</h2>
+
+          <details class="faq-item">
+            <summary class="faq-question">How can I suggest a new tool or report a bug?</summary>
+            <div class="faq-answer">
+              We welcome your suggestions and bug reports! Head over to our <a href="contact.html">Contact Page</a> to submit feedback directly to our developer team.
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 48 48" aria-hidden="true" width="32" height="32">
+              <rect width="48" height="48" rx="12" fill="url(#logoGrad)"/>
+              <path d="M14 24L21 17L28 24L21 31Z" fill="#ffffff" opacity="0.9"/>
+              <path d="M24 14L31 21L38 14" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="29" cy="29" r="5" fill="#ffffff"/>
+            </svg>
+            <span style="font-weight: 700; font-size: 1.25rem;">ToolBox <span class="brand-highlight">Web</span></span>
+          </div>
+          <p class="footer-description">
+            Your comprehensive, privacy-first online toolkit. 20 free utilities running 100% locally in your browser.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">All 20 Tools</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sitemap.html">HTML Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Tool Categories</h4>
+          <ul class="footer-links">
+            <li><a href="tools.html?category=image">Image Tools</a></li>
+            <li><a href="tools.html?category=pdf">PDF Tools</a></li>
+            <li><a href="tools.html?category=qr">QR Code Tools</a></li>
+            <li><a href="tools.html?category=security">Security Tools</a></li>
+            <li><a href="tools.html?category=text">Text Utilities</a></li>
+            <li><a href="tools.html?category=developer">Developer Tools</a></li>
+            <li><a href="tools.html?category=utility">Math & Utilities</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="current-year">2026</span> ToolBox Web. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
